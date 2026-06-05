@@ -1,0 +1,44 @@
+{
+  "name": "object-processing",
+  "title": "Object Processing",
+  "version": "0.1.1",
+  "description": "Turns on Moonraker's enable_object_processing so adaptive bed mesh gets per-object data. Enabling 'Exclude Object' in your slicer is preferred; this can cause long processing times and high memory use on very large gcode files (> 100MB).",
+  "tagline": "Enable Moonraker object processing for adaptive mesh.",
+  "category": "printing",
+  "channel": "stable",
+  "printer_specific": false,
+  "published_at": "2026-03-22",
+  "updated_at": "2026-03-22",
+  "source": "https://github.com/bespok3d-org/plugin-object-processing",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "object-processing"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "moonraker-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "moonraker-config",
+        "src": "files/cfg/moonraker/object-processing.cfg"
+      }
+    ],
+    "restart": [
+      "moonraker"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}

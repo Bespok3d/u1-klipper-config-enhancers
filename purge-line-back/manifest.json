@@ -1,0 +1,44 @@
+{
+  "name": "purge-line-back",
+  "title": "Purge Line at Back",
+  "version": "0.1.1",
+  "description": "Relocates the print-start purge line from the front of the build plate to the back, keeping it clear of the printed part. Overrides the stock SM_PRINT_START_LINE_EXTRUDER_* macros for all four tools. Works only on the Snapmaker U1.",
+  "tagline": "Move the print-start purge line to the back of the bed.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "published_at": "2026-03-01",
+  "updated_at": "2026-03-12",
+  "source": "https://github.com/bespok3d-org/plugin-purge-line-back",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "purge-line-back"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": []
+  },
+  "permissions": [
+    "klipper-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "klipper-config",
+        "src": "files/cfg/klipper/purge-line-back.cfg"
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}
