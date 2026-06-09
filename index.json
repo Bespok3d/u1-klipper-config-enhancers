@@ -26,7 +26,8 @@
       ],
       "conflicts": [],
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/cpu-temp/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442589416",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442759495",
+      "changelog_url": "cpu-temp/doc/CHANGELOG.md",
       "deps": []
     },
     {
@@ -51,7 +52,8 @@
       ],
       "conflicts": [],
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/object-processing/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442589441",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442759520",
+      "changelog_url": "object-processing/doc/CHANGELOG.md",
       "deps": []
     },
     {
@@ -76,7 +78,8 @@
       ],
       "conflicts": [],
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/purge-line-back/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442589459",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/442759543",
+      "changelog_url": "purge-line-back/doc/CHANGELOG.md",
       "deps": []
     }
   ],
