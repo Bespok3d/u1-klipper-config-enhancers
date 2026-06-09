@@ -58,3 +58,10 @@ copying each atom.
 
 Secret required: `MAIN_INDEX_TOKEN` (a fine-grained PAT with `contents:write` on
 `Bespok3d/main-index`). GPG signing of the sub-list is deferred during private testing.
+## Maintainership
+
+These plugins are published and maintained by the Bespok3d org, and several of them repackage or
+build on upstream source material. If you own the source material a plugin is based on and would
+rather manage it yourself, you are welcome to contact the org to claim it back. The one condition is
+that it stays actively maintained: a claimed plugin left to rot will be reclaimed so users are never
+stranded on an abandoned package.
