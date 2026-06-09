@@ -7,6 +7,7 @@
   "category": "printing",
   "channel": "stable",
   "printer_specific": false,
+  "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-03-22",
   "updated_at": "2026-03-22",
   "source": "https://github.com/bespok3d-org/plugin-object-processing",

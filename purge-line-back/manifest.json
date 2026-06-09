@@ -7,6 +7,7 @@
   "category": "tuning",
   "channel": "stable",
   "printer_specific": true,
+  "changelog": "doc/CHANGELOG.md",
   "published_at": "2026-03-01",
   "updated_at": "2026-03-12",
   "source": "https://github.com/bespok3d-org/plugin-purge-line-back",
