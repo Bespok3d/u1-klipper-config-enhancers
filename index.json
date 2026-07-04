@@ -2,7 +2,7 @@
   "schema_version": 1,
   "name": "U1 Klipper Config Enhancers",
   "publisher": "PLACEHOLDER",
-  "updated": "2026-03-22",
+  "updated": "2026-07-04",
   "plugins": [
     {
       "name": "cpu-temp",
@@ -28,6 +28,44 @@
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/cpu-temp/doc/README.md",
       "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/445086270",
       "changelog_url": "cpu-temp/doc/CHANGELOG.md",
+      "deps": []
+    },
+    {
+      "name": "idle-timeout",
+      "title": "Idle Timeout",
+      "version": "0.1.0",
+      "description": "Sets how long the printer waits, with no activity, before it powers down its motors and heaters (Klipper's idle timeout). The Snapmaker U1 ships with a short 5 minute (300 second) timeout, which can cut power mid-workflow while you swap filament or level by hand. Set the timeout you want, in seconds; the plugin overrides the printer's idle_timeout value so it sticks across prints. Default is 7200 seconds (2 hours).",
+      "tagline": "Choose how long the printer stays awake before it powers its motors down.",
+      "category": "tuning",
+      "channel": "stable",
+      "publisher": "PLACEHOLDER",
+      "printer_specific": true,
+      "published_at": "2026-07-04",
+      "updated_at": "2026-07-04",
+      "requires": {
+        "capabilities": [
+          "klipper-generic"
+        ]
+      },
+      "provides": [
+        "idle-timeout"
+      ],
+      "conflicts": [],
+      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/idle-timeout/doc/README.md",
+      "download_url": "idle-timeout-0.1.0.b3",
+      "min_daemon_version": "0.10.1-dev",
+      "config": [
+        {
+          "key": "IDLE_TIMEOUT_SECONDS",
+          "label": "Idle timeout (seconds)",
+          "type": "number",
+          "default": "7200",
+          "hint": "Seconds of inactivity before the printer powers its motors and heaters down. 3600 = 1 hour, 7200 = 2 hours. Must be a positive whole number.",
+          "userEditable": true,
+          "scope": "global"
+        }
+      ],
+      "changelog_url": "idle-timeout/doc/CHANGELOG.md",
       "deps": []
     },
     {

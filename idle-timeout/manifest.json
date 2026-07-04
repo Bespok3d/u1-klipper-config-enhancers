@@ -1,0 +1,65 @@
+{
+  "name": "idle-timeout",
+  "title": "Idle Timeout",
+  "version": "0.1.0",
+  "min_daemon_version": "0.10.1-dev",
+  "description": "Sets how long the printer waits, with no activity, before it powers down its motors and heaters (Klipper's idle timeout). The Snapmaker U1 ships with a short 5 minute (300 second) timeout, which can cut power mid-workflow while you swap filament or level by hand. Set the timeout you want, in seconds; the plugin overrides the printer's idle_timeout value so it sticks across prints. Default is 7200 seconds (2 hours).",
+  "tagline": "Choose how long the printer stays awake before it powers its motors down.",
+  "category": "tuning",
+  "channel": "stable",
+  "printer_specific": true,
+  "changelog": "doc/CHANGELOG.md",
+  "published_at": "2026-07-04",
+  "updated_at": "2026-07-04",
+  "source": "https://github.com/Bespok3d/u1-klipper-config-enhancers",
+  "publisher": "PLACEHOLDER",
+  "provides": [
+    {
+      "service": "idle-timeout"
+    }
+  ],
+  "require": [],
+  "conflicts": [],
+  "requires": {
+    "capabilities": [
+      "klipper-generic"
+    ],
+    "variables": [
+      {
+        "name": "IDLE_TIMEOUT_SECONDS",
+        "description": "Idle timeout in seconds (a positive whole number). 3600 = 1 hour, 7200 = 2 hours.",
+        "required": true
+      }
+    ]
+  },
+  "config": [
+    {
+      "key": "IDLE_TIMEOUT_SECONDS",
+      "label": "Idle timeout (seconds)",
+      "type": "number",
+      "default": "7200",
+      "hint": "Seconds of inactivity before the printer powers its motors and heaters down. 3600 = 1 hour, 7200 = 2 hours. Must be a positive whole number.",
+      "userEditable": true,
+      "scope": "global"
+    }
+  ],
+  "permissions": [
+    "klipper-config",
+    "restart"
+  ],
+  "install": {
+    "place": [
+      {
+        "class": "klipper-config",
+        "src": "files/cfg/klipper/idle-timeout.cfg.tmpl",
+        "name": "idle-timeout.cfg",
+        "render": true
+      }
+    ],
+    "restart": [
+      "klipper"
+    ]
+  },
+  "conflict_resolutions": [],
+  "files": []
+}

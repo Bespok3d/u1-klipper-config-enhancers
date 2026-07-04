@@ -8,6 +8,7 @@ good template for a multi-plugin repo that publishes its own sub-list.
 Plugins:
 
 - **cpu-temp** - adds the Rockchip SoC as a Klipper `temperature_sensor`.
+- **idle-timeout** - sets how long the printer stays awake before powering its motors down (overrides the stock idle_timeout).
 - **object-processing** - enables Moonraker `enable_object_processing` for adaptive mesh.
 - **purge-line-back** - moves the print-start purge line to the back of the bed.
 

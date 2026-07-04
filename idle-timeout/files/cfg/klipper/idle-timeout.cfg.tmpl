@@ -1,0 +1,8 @@
+# Override the printer's idle motor timeout. The stock [idle_timeout] section sets a short default;
+# redefining only the timeout option here overrides it, because Klipper reads this bespok3d include
+# after the stock section and the last value for an option wins. This matters on the Snapmaker U1,
+# whose firmware macros (PRINT_END, CANCEL_PRINT, manual feed) re-apply the configured idle_timeout
+# value after every print, so a runtime SET_IDLE_TIMEOUT would not stick but this override does.
+# timeout_on_pause is left exactly as the firmware set it.
+[idle_timeout]
+timeout: $IDLE_TIMEOUT_SECONDS
