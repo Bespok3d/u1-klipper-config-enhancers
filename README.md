@@ -22,10 +22,6 @@ u1-klipper-config-enhancers/
     doc/README.md           # rendered in-app; not deployed to the printer
   object-processing/
   purge-line-back/
-  scripts/
-    pack.sh                 # pack every <plugin>/ into dist/<name>-<ver>.b3
-    generate-atom.mjs       # emit one plugin's index atom (--plugin <id>)
-    assemble-list.mjs       # assemble the atoms into this repo's index.json sub-list
   .github/workflows/release.yml
   index.json                # the published sub-list (committed; referenced by main-index)
   dist/                     # build output (gitignored)
@@ -37,28 +33,23 @@ path and realizes the restart. See `Bespok3d/doc/anatomy-of-a-plugin.md` and `pa
 
 ## Build locally
 
-Prerequisites: `zip`, `jq`, and `shasum` (macOS) or `sha256sum` (Linux), plus `node` for the atom +
-sub-list steps.
+Needs Node.js 20+. Builds run through the shared `Bespok3d/b3-builder` tool:
 
 ```sh
-sh scripts/pack.sh                              # -> dist/<name>-<ver>.b3 for every plugin
-node scripts/generate-atom.mjs --plugin cpu-temp   # -> dist/cpu-temp.atom.json (dry-run url)
-node scripts/assemble-list.mjs                  # -> index.json from dist/*.atom.json
+npm install github:Bespok3d/b3-builder
+npx b3-builder build --source ./cpu-temp --atom-repo Bespok3d/u1-klipper-config-enhancers
+# -> dist/cpu-temp-<ver>.b3 + dist/cpu-temp.atom.json
 ```
 
-The monorepo's bundled dev index discovers these plugins directly from this tree (no publish step
-needed for local development); see `Bespok3d/scripts/generate-index.mjs`.
+Drop `--source` to build every plugin in the repo at once.
 
 ## Releasing
 
-Bump a plugin's `manifest.json` `version` and push to `main`. CI packs every `.b3`, cuts a GitHub
-release per plugin, regenerates this repo's `index.json` sub-list, and registers the sub-list in
-`Bespok3d/main-index` (a `lists/<repo>.json` `{name,url}` reference) so the official catalog picks
-the plugins up. main-index is a list-of-lists; it references this sub-list by URL rather than
-copying each atom.
+Bump a plugin's `manifest.json` `version` and push to `main`. CI runs the `Bespok3d/b3-builder`
+Action over the whole repo, which packs each `.b3`, cuts a release per plugin, assembles this repo's
+`index.json` sub-list as `U1 Klipper Config Enhancers`, and registers it in `Bespok3d/main-index`
+(`lists/<repo>.json`). Secret: `MAIN_INDEX_TOKEN` (contents:write on main-index). Signing deferred.
 
-Secret required: `MAIN_INDEX_TOKEN` (a fine-grained PAT with `contents:write` on
-`Bespok3d/main-index`). GPG signing of the sub-list is deferred during private testing.
 ## Maintainership
 
 These plugins are published and maintained by the Bespok3d org, and several of them repackage or
