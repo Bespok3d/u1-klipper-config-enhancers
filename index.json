@@ -25,9 +25,9 @@
         "cpu-temp-sensor"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/cpu-temp/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/466508521",
       "changelog_url": "cpu-temp/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/cpu-temp/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/481342975",
       "deps": []
     },
     {
@@ -51,8 +51,6 @@
         "idle-timeout"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/idle-timeout/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/466508546",
       "min_daemon_version": "0.10.1-dev",
       "config": [
         {
@@ -66,6 +64,8 @@
         }
       ],
       "changelog_url": "idle-timeout/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/idle-timeout/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/481342987",
       "deps": []
     },
     {
@@ -89,9 +89,9 @@
         "object-processing"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/object-processing/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/466508569",
       "changelog_url": "object-processing/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/object-processing/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/481343009",
       "deps": []
     },
     {
@@ -115,9 +115,9 @@
         "purge-line-back"
       ],
       "conflicts": [],
-      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/purge-line-back/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/466508592",
       "changelog_url": "purge-line-back/doc/CHANGELOG.md",
+      "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/purge-line-back/doc/README.md",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/481343060",
       "deps": []
     }
   ],
