@@ -2,6 +2,7 @@
   "name": "cpu-temp",
   "title": "CPU Temperature",
   "version": "0.1.2",
+  "author": "bespoked",
   "description": "Adds the printer's Rockchip CPU as a Klipper temperature_sensor so its temperature shows up in the web UI alongside the hotend and bed. Read-only monitoring, no fan control. Works only on the Rockchip-based Snapmaker U1.",
   "tagline": "Show the Rockchip SoC temperature in Fluidd & Mainsail.",
   "category": "sensors",

@@ -2,6 +2,7 @@
   "name": "object-processing",
   "title": "Object Processing",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Turns on Moonraker's enable_object_processing so adaptive bed mesh gets per-object data. Enabling 'Exclude Object' in your slicer is preferred; this can cause long processing times and high memory use on very large gcode files (> 100MB).",
   "tagline": "Enable Moonraker object processing for adaptive mesh.",
   "category": "printing",

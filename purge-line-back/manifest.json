@@ -2,6 +2,7 @@
   "name": "purge-line-back",
   "title": "Purge Line at Back",
   "version": "0.1.1",
+  "author": "bespoked",
   "description": "Relocates the print-start purge line from the front of the build plate to the back, keeping it clear of the printed part. Overrides the stock SM_PRINT_START_LINE_EXTRUDER_* macros for all four tools. Works only on the Snapmaker U1.",
   "tagline": "Move the print-start purge line to the back of the bed.",
   "category": "tuning",
