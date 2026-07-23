@@ -16,6 +16,7 @@
       "printer_specific": true,
       "published_at": "2026-02-25",
       "updated_at": "2026-02-25",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -27,7 +28,7 @@
       "conflicts": [],
       "changelog_url": "cpu-temp/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/cpu-temp/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/486461225",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/487124821",
       "deps": []
     },
     {
@@ -42,6 +43,7 @@
       "printer_specific": true,
       "published_at": "2026-07-04",
       "updated_at": "2026-07-04",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -65,7 +67,7 @@
       ],
       "changelog_url": "idle-timeout/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/idle-timeout/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/486461241",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/487124862",
       "deps": []
     },
     {
@@ -80,6 +82,7 @@
       "printer_specific": false,
       "published_at": "2026-03-22",
       "updated_at": "2026-03-22",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -91,7 +94,7 @@
       "conflicts": [],
       "changelog_url": "object-processing/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/object-processing/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/486461253",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/487124924",
       "deps": []
     },
     {
@@ -106,6 +109,7 @@
       "printer_specific": true,
       "published_at": "2026-03-01",
       "updated_at": "2026-03-12",
+      "author": "bespoked",
       "requires": {
         "capabilities": [
           "klipper-generic"
@@ -117,7 +121,7 @@
       "conflicts": [],
       "changelog_url": "purge-line-back/doc/CHANGELOG.md",
       "doc_url": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/main/purge-line-back/doc/README.md",
-      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/486461268",
+      "download_url": "https://api.github.com/repos/Bespok3d/u1-klipper-config-enhancers/releases/assets/487124965",
       "deps": []
     }
   ],
