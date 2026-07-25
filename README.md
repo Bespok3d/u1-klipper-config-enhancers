@@ -29,7 +29,7 @@ u1-klipper-config-enhancers/
 
 Each plugin declares WHAT, never HOW: a destination `class` (`klipper-config` / `moonraker-config`)
 and a `restart` hook (`klipper` / `moonraker`). The adapter on the printer maps the class to a real
-path and realizes the restart. See `Bespok3d/doc/anatomy-of-a-plugin.md` and `package-format.md`.
+path and realizes the restart.
 
 ## Build locally
 
