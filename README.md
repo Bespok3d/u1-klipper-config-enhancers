@@ -1,5 +1,10 @@
 # u1-klipper-config-enhancers
 
+[![licence](https://img.shields.io/badge/licence-GPL--3.0-blue)](LICENSE)
+[![release](https://img.shields.io/github/v/release/Bespok3d/u1-klipper-config-enhancers)](https://github.com/Bespok3d/u1-klipper-config-enhancers/releases)
+![printer](https://img.shields.io/badge/printer-Snapmaker%20U1-informational)
+![stock firmware](https://img.shields.io/badge/stock%20firmware-no%20flashing-brightgreen)
+
 A small co-repo of config-only Bespok3d plugins for the Snapmaker U1: each one drops a single
 Klipper or Moonraker config include and asks the daemon to restart the affected service. No
 scripts, no patches, no binaries. They are the simplest worked example of the plugin model and a
@@ -83,3 +88,11 @@ cannot happen is code offered under version 3 of the GPL alone being re-offered 
 
 Bespok3d is a project of the Bespok3d Organisation, which is not a legal entity. Copyright is held by
 the individual authors named above.
+
+## Support this project
+
+`cpu-temp` and `idle-timeout` are Bespok3d's own work.
+`purge-line-back`, `object-processing`
+packages software written by other people, and a donation here is not a donation to them.
+
+If our part saved you an afternoon, you can [buy me a coffee](https://buymeacoffee.com/unlucio).
