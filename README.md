@@ -1,5 +1,10 @@
 # u1-klipper-config-enhancers
 
+[![licence](https://img.shields.io/badge/licence-GPL--3.0-blue)](LICENSE)
+[![release](https://img.shields.io/github/v/release/Bespok3d/u1-klipper-config-enhancers)](https://github.com/Bespok3d/u1-klipper-config-enhancers/releases)
+![printer](https://img.shields.io/badge/printer-Snapmaker%20U1-informational)
+![stock firmware](https://img.shields.io/badge/stock%20firmware-no%20flashing-brightgreen)
+
 A small co-repo of config-only Bespok3d plugins for the Snapmaker U1: each one drops a single
 Klipper or Moonraker config include and asks the daemon to restart the affected service. No
 scripts, no patches, no binaries. They are the simplest worked example of the plugin model and a
@@ -58,3 +63,36 @@ build on upstream source material. If you own the source material a plugin is ba
 rather manage it yourself, you are welcome to contact the org to claim it back. The one condition is
 that it stays actively maintained: a claimed plugin left to rot will be reclaimed so users are never
 stranded on an abandoned package.
+
+## Licence
+
+Copyright (C) 2026 unlucio and the Bespok3d contributors
+
+This repo ships code from other projects offered under version 3 of the GNU General Public License,
+with no option to use a later version, so version 3 of that licence covers every file in this repo.
+
+This program is free software: you can redistribute it and/or modify it under the terms of version 3
+of the GNU General Public License as published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
+even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General
+Public License for more details.
+
+You should have received a copy of the GNU General Public License along with this program. If not,
+see <https://www.gnu.org/licenses/>. The full text is in [LICENSE](LICENSE).
+
+Bespok3d's own code elsewhere is AGPL-3.0-or-later. One licence covering this whole repo is a clarity
+choice, so that nobody has to work out which file carries which terms. Version 3 of the GPL and
+version 3 of the AGPL may be combined in a single work, and section 13 of each licence says so; what
+cannot happen is code offered under version 3 of the GPL alone being re-offered under the AGPL.
+
+Bespok3d is a project of the Bespok3d Organisation, which is not a legal entity. Copyright is held by
+the individual authors named above.
+
+## Support this project
+
+`cpu-temp` and `idle-timeout` are Bespok3d's own work.
+`purge-line-back`, `object-processing`
+packages software written by other people, and a donation here is not a donation to them.
+
+If our part saved you an afternoon, you can [buy me a coffee](https://buymeacoffee.com/unlucio).

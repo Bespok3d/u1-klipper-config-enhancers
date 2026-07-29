@@ -15,6 +15,11 @@ Install the plugin; the next print's purge line is drawn at the back automatical
 slicer changes are needed if your start g-code already calls the Snapmaker print-start
 sequence.
 
+## Credit
+
+The macro is DocKuro's, first posted in the Snapmaker Discord. Bespok3d packages it so it installs
+on stock firmware.
+
 ## Notes
 
 - Klipper restarts when this plugin is installed or removed.
