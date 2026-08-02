@@ -3,7 +3,7 @@
   "title": "Idle Timeout",
   "version": "0.1.0",
   "author": "bespoked",
-  "min_daemon_version": "0.10.1-dev",
+  "min_daemon_version": "0.10.1",
   "description": "Sets how long the printer waits, with no activity, before it powers down its motors and heaters (Klipper's idle timeout). The Snapmaker U1 ships with a short 5 minute (300 second) timeout, which can cut power mid-workflow while you swap filament or level by hand. Set the timeout you want, in seconds; the plugin overrides the printer's idle_timeout value so it sticks across prints. Default is 7200 seconds (2 hours).",
   "tagline": "Choose how long the printer stays awake before it powers its motors down.",
   "category": "tuning",

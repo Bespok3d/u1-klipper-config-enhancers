@@ -53,7 +53,7 @@
         "idle-timeout"
       ],
       "conflicts": [],
-      "min_daemon_version": "0.10.1-dev",
+      "min_daemon_version": "0.10.1",
       "config": [
         {
           "key": "IDLE_TIMEOUT_SECONDS",
