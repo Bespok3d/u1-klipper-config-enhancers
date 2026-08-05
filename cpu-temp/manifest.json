@@ -42,5 +42,7 @@
     ]
   },
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "license": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/dev/cpu-temp/doc/LICENSE",
+  "attributions": "# Attributions - cpu-temp\n\n**Plugin author:** Bespok3d\n\nShows the mainboard CPU temperature in the web interface.\n\nNo third-party code ships in this package.\n"
 }

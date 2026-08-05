@@ -62,5 +62,7 @@
     ]
   },
   "conflict_resolutions": [],
-  "files": []
+  "files": [],
+  "license": "https://github.com/Bespok3d/u1-klipper-config-enhancers/blob/dev/idle-timeout/doc/LICENSE",
+  "attributions": "# Attributions - idle-timeout\n\n**Plugin author:** Bespok3d\n\nSets how long the printer waits before going idle.\n\nNo third-party code ships in this package.\n"
 }
